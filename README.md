@@ -1,3 +1,6 @@
+Multi-stage form built using React.js and Material UI.  Great for creating a simple multi step form for projects/etc.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,3 +69,6 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+Tutorial through Traversy Media - YouTube --> https://www.youtube.com/user/TechGuyWeb
+
