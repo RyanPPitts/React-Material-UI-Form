@@ -3,6 +3,8 @@
 
 import React, { Component } from 'react';
 import FormUserDetails from './FormUserDetails';
+import FormPersonalDetails from './FormPersonalDetails';
+import Confirm from './Confirm';
 
 export class UserForm extends Component {
     state = {
@@ -61,13 +63,32 @@ export class UserForm extends Component {
                 values={values}
                 />
             );
-            case 2:
-                return <h1> Form Personal Details</h1>;
-              case 3: 
-                return <h1> Confirm</h1>;
 
-                case 4: 
-                return <h1>Success</h1>;
+            case 2:
+            return (
+            // this is passing the values to the next component
+              <FormPersonalDetails 
+            // here are the props and call the nextStep and prevStep method
+             nextStep={this.nextStep}
+             prevStep={this.prevStep}
+             handleChange={this.handleChange}
+             values={values}
+            />
+            );
+
+             case 3: 
+             return (
+                // this is passing the values to the next component
+                  <Confirm 
+                // here are the props and call the nextStep and prevStep method
+                 nextStep={this.nextStep}
+                 prevStep={this.prevStep}
+                 values={values}
+                />
+                );
+
+              case 4: 
+              return <h1>Success</h1>;
         }
     }
 }
